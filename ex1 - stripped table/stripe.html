@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="stripe.css">
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>heading</th>
+        <th>heading</th>
+        <th>heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>odd</td>
+        <td>odd</td>
+        <td>odd</td>
+      </tr>
+      <tr>
+        <td>even</td>
+        <td>even</td>
+        <td>even</td>
+      </tr>
+      <tr>
+        <td>odd</td>
+        <td>odd</td>
+        <td>odd</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>even</td>
+        <td>even</td>
+        <td>even</td>
+      </tr>
+    </tfoot>
+  </table>
+  <form class = "changeStripe" action="javascript:void(0)">
+    <p>
+      <label for="color">Change even background color</label>
+      <input id="color"type="text" class="newColor" autofocus>
+    </p>
+
+    <p>
+      <label for="property">Change odd property</label>
+      <input id="property"type="text" class="property">
+
+      <label for="value">Change odd value</label>
+      <input id="value"type="text" class="value">
+    </p>
+
+
+    <input type="submit" value="Change!">
+  </form>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src = "stripe.js"></script>
+</html>

@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+.checked {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.remove {
+  background: #fb003f;
+  border: none;
+  margin-left: 5px;
+  border-radius: 3px ;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
