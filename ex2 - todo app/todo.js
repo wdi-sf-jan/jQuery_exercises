@@ -9,7 +9,7 @@ $(document).ready(function(){
       $(".todos").append(todo);
       $(".todoText").val("");
       $(".warning").fadeOut(500, function(){
-        $(this).empty();
+        $(this).hide();
       });
     }
     else {
