@@ -5,17 +5,18 @@ $(document).ready(function(){
       var text = "<span>" + $(".todoText").val() + "</span>";
       var button = "<button class = 'remove'>X</button>";
       var checkbox = "<input type='checkbox' class='checked'>";
-      var todo = $("<li>" + checkbox + text + button + "</li>").hide().fadeIn(500);
+      var todo = $("<li>" + checkbox + text + button + "</li>").fadeIn(500);
       $(".todos").append(todo);
       $(".todoText").val("");
       $(".warning").fadeOut(500, function(){
-        $(this).hide();
+        $(this).empty();
       });
     }
     else {
       $(".warning").show().text("Please enter some text").css("color","red");
     }
   });
+
   // cleaner than throwing it in the handler
   $("ul").on("click", "button", function(){
     $(this).parent().fadeOut(500, function(){
