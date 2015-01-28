@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $("form").on("submit", function(e){
     if ($("#username").val().length === 0){
+      e.preventDefault()
       $(".blankWarning").show();
       $(".blankWarning").text("Please enter a password").css("color","red");
     }
